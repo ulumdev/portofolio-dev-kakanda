@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EducationController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/example', function () {
         return view('website.pages.example.index');
     })->name('example');
+
+    Route::resource('education', EducationController::class);
 });
 
 

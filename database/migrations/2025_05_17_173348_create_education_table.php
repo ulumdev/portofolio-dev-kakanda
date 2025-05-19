@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('degree');
             $table->string('institution');
             $table->string('field_of_study')->nullable();
-            $table->year('start_year')->nullable();
-            $table->year('end_year')->nullable();
-            $table->string('grade')->nullable();
+            $table->string('start_date', 7);    // format: YYYY-MM
+            $table->string('end_date', 7)->nullable();  // format: YYYY-MM
+            $table->string('grade');
             $table->text('description')->nullable();
             $table->timestamps();
             $table->softDeletes(); // Soft delete column

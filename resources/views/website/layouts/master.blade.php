@@ -14,6 +14,23 @@
 
     @include('website.resources.head-css')
 
+    {{-- Styles Custom --}}
+    <style>
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 25px;
+            transition: all .5s ease;
+            display: none;
+            z-index: 1000
+        }
+
+        #back-to-top:hover {
+            -webkit-animation: fade-up 1.5s linear infinite;
+            animation: fade-up 1.5s linear infinite
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,7 +55,7 @@
     </div>
     <!-- END layout-wrapper -->
     <!--start back-to-top-->
-    <button onclick="topFunction()" class="btn btn-danger btn-icon" id="back-to-top">
+    <button onclick="topFunction()" class="btn btn-success btn-icon" id="back-to-top">
         <i class="ri-arrow-up-line"></i>
     </button>
     <!--end back-to-top-->

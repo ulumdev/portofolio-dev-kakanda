@@ -73,7 +73,8 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('education.*') ? 'active' : '' }}" href="">
+                    <a class="nav-link {{ request()->routeIs('education.*') ? 'active' : '' }}"
+                        href="{{ route('education.index') }}">
                         <i class="ri-vip-crown-2-line"></i> <span data-key="t-landing">Education</span>
                     </a>
                 </li>
