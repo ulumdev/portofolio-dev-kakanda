@@ -144,7 +144,8 @@
                                 <label for="descriptionInput" class="form-label">Description</label>
                             </div>
                             <div class="col-lg-9">
-                                <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Enter your description" name="address">{{ old('address') }}</textarea>
+                                <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Enter your description"
+                                    name="description">{{ old('description') }}</textarea>
                             </div>
                         </div>
                         <div class="text-end">
